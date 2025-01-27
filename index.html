@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Harmony Johnson</title>
+    <link rel="stylesheet" href="portfolio.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+    <link rel="icon" href="assets/logo.png" type="image/png">
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Harmony Johnson</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Harmony Johnson</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img id="profile-image" src="./assets/profile.png" alt="Harmony Johnson profile picture" />
+      </div>
+
+      <div class="section__text">
+          <p id="type1">Hello I'm</p>  <span id="type2">Harmony Johnson</span></p>
+          <button class="btn btn-color-1" onclick="location.href='#contact'">
+            Contact
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section id="about">
+      <h1>Get to know more about me</h1>
+      <div class="section-container about-section-container">
+        <span class="about-text">Interests</span>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./assets/basketball-player-scoring.png"
+                alt="basketball-player-scoring icon"
+                class="icon"
+              />
+              <h3>Basketball</h3>
+            </div>
+            <div class="details-container">
+              <img
+                src="./assets/games.png"
+                alt="games icon"
+                class="icon"
+              />
+              <h3>Video Games</h3>
+            </div>
+            <div class="details-container">
+              <img
+                src="./assets/watching-tv.png"
+                alt="watching-tv icon"
+                class="icon"
+              />
+              <h3>Watching TV</h3>
+            </div>
+            <div class="details-container">
+              <img
+                src="./assets/bitcoin.png"
+                alt="bitcoin icon"
+                class="icon"
+              />
+              <h3>Cryptocurrency</h3>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </section>
+    
+    <section class="contact-section">
+      <h1>Send a message</h1>
+      <form id="contact-form" action="" method="post">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <input type="text" name="subject" placeholder="Subject" required>
+        <textarea name="message" placeholder="Your Message" required></textarea>
+        <button class="btn btn-color-1" type="submit">
+          Submit
+        </button>
+      </form>
+
+      <div class="contact-info-upper-container">
+      <div class="contact-info-container">
+        <img
+          src="./assets/email.png"
+          alt="Email icon"
+          class="icon contact-icon email-icon"
+        />
+        <p><a href="mailto:harmonyjohnsontm@gmail.com">harmonyjohnsontm@gmail.com</a></p>
+      </div>
+      </div>
+    </section>
+
+    
+
+    <script src="portfolio.js"></script>
+  </body>
+</html>
